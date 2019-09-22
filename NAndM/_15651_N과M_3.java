@@ -6,6 +6,7 @@ import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
+// Scanner, System.out.println 사용시 시간초과!!
 public class _15651_N과M_3
 {
 	static int N, M;
