@@ -3,8 +3,8 @@
 
 
 ## Java  
-- 입출력 Scanner, Sysout대신 BReader, BWriter를 쓰자  
-  + Scanner, System.out.println  
+입출력 시 Scanner, Sysout대신 BReader, BWriter를 쓰자  
++ Scanner, System.out.println  
 ```  
 Scanner scan = new Scanner(System.int);
 
@@ -15,7 +15,7 @@ scan.nextLine();
 String str = scan.nextLine();
 ```  
 
-  + BufferedReader, BuffredWriter  
++ BufferedReader, BuffredWriter  
 ```  
 BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 
