@@ -1,6 +1,26 @@
 # Algorithm Practice
 코딩테스트 준비
 
+## 문제 풀기 전 생각 
+- 시간 복잡도 생각하기
+- 공간 복잡도 생각하기 
+- 자료구조 선택하기 
+- (정렬)
+
+## 자료구조 
+- array, ArrayList
+- Queue, Stack
+- Map
+- Graph, Tree
+
+## 알고리즘 풀이 방법
+
+- Greedy Algorithm
+- N and M
+- DP(Dynamic Programming)
+- DFS, BFS
+- Tree
+- Binary Search
 
 ## Java  
 입출력 시 Scanner, Sysout대신 BufferedReader, BuffredWriter를 쓰자  
