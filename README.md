@@ -8,10 +8,10 @@
 - (정렬)
 
 ## 자료구조 
-- array, ArrayList
+- array, ArrayList, LinkedList
 - Queue, Stack
 - Map
-- Graph, Tree
+- Graph, Tree, Heap
 
 ## 알고리즘 풀이 방법
 
