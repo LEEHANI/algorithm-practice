@@ -1,35 +1,29 @@
-import sys  # 입력
-
-# 전위 순회 (루트)(왼쪽 자식)(오른쪽 자식)
+import sys
 
 
 def preorder(start):
 
-    if 0 <= start < 26:
+    if start < 0:
         return
 
     print(chr(start+ord("A")), end="")
     preorder(arr[start][0])
     preorder(arr[start][1])
 
-# 중위 순회 (왼쪽 자식)(루트)(오른쪽 자식)
-
 
 def inorder(start):
 
-    if 0 <= start < 26:
+    if start < 0:
         return
 
     inorder(arr[start][0])
     print(chr(start+ord("A")), end="")
     inorder(arr[start][1])
 
-# 후위 순회(왼쪽 자식)(오른쪽 자식)(루트)
-
 
 def postorder(start):
 
-    if 0 <= start < 26:
+    if start < 0:
         return
 
     postorder(arr[start][0])
@@ -37,25 +31,28 @@ def postorder(start):
     print(chr(start+ord("A")), end="")
 
 
-# 입력
 N = int(sys.stdin.readline())
-arr = [[-1 for col in range(2)] for row in range(N)]
+
+arr = [[0 for col in range(2)] for row in range(N)]
 
 for i in range(N):
-    # p, c1, c2 = sys.stdin.readline().split()
+    a, b, c = sys.stdin.readline().split()
 
-    # p = ord(p)-ord('A')
-    # if c1 != ".":
-    #     c1 = ord(c1)-ord('A')
-    # if c2 != ".":
-    #     c2 = ord(c2)-ord('A')
-    p, c1, c2 = map(lambda x: ord(x)-ord('A'),
-                    sys.stdin.readline().split())  # [A,B,C]
+    a = ord(a)-ord('A')
 
-    arr[p][0] = c1
-    arr[p][1] = c2
+    if b == ".":
+        b = -1
+    else:
+        b = ord(b)-ord('A')
 
-# 출력
+    if c == ".":
+        c = -1
+    else:
+        c = ord(c)-ord('A')
+
+    arr[a][0] = b
+    arr[a][1] = c
+
 preorder(0)
 print()
 inorder(0)

@@ -1,7 +1,11 @@
 
 # DFS, BFS
-DFS(Depth First Search, 깊이 우선 탐색)는 Stack을 이용한 탐색 기법
-BFS(Breadth First Search, 너비 우선 탐색)는 Queue를 이용한 탐색 기법
+- DFS(Depth First Search, 깊이 우선 탐색)는 Stack을 이용한 탐색 기법
+  + 한 정점으로만 나아간다
+  + O(V+E)
+- BFS(Breadth First Search, 너비 우선 탐색)는 Queue를 이용한 탐색 기법
+  + 모든 정점으로 나아간다. 
+  + O(V+E)
 
 ### 1차원
 
