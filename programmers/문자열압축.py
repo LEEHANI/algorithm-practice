@@ -1,3 +1,10 @@
+'''
+[주의해야할 점]
+1. 여러 케이스 생각해보기
+2. while문 조건 잘 생각하기
+'''
+
+
 def try_answer(arr):
     answer = ''
     target = arr.pop(0)
