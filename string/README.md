@@ -16,7 +16,7 @@
   + map(function, iterable)  
     - `list(map(int, arr))` # int(all items of arr)`
   + 정렬
-    + `sorted(arr)` # return arr 
+    + `sorted(arr, reverse=True)` # return arr 
       * 정렬 조건 `sorted(arr, key=lambda x: (x[1], -x[0]))`
     + `arr.sort()` # return void
 - ascii
