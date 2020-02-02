@@ -1,92 +1,44 @@
-def find_character(name):
-    
-    print(len(name)//2)
-    for i in range(len(name)//2):
-        print(i,name[i],name[-i])
-        if name[i] != 'A':
-            return i
-        if name[-i] != 'A':
-            return -i
-        
+'''
+좌, 우로 움직일 때 A가 아닌 알파벳을 먼저 찾아, 그 방향으로 움직이도록 짜는 게 핵심
+'''
 def solution(name):
-    if name.count('A') == len(name):
-        return 0
-    
-    answer = -1
-    name=list(name)
-    c=''
-    while len(name):
-        if name.count('A') == len(name):
-            break
-        
-        if name[0] != 'A':
-            c=name.pop(0)
-        elif name[-1] != 'A':
-            c=name.pop()
-            if answer == -1:
-                answer+=1
-        else:
-            i=find_character(name)
-            if i==None:
-              c=name.pop()  
-            elif i>0:
-                for p in range(i):
-                    c=name.pop(0)
-                answer +=i-1
-            else:
-                for p in range(abs(i)):
-                    c=name.pop()        
-                answer += abs(i)-1
-            # print(c,i)    
-        answer+=1
-        
-        temp=ord(c)-ord('A')
-        print(c, answer, temp)
-        if temp > 13:
-            temp= abs(temp-26)
-        answer+=temp    
-        
-    return answer
-
-def solution2(name):
     answer = 0
-    visited=[0]*len(name)
+    name=list(name)
     cursor=0
-    move=0
-    print(visited, sum(visited), len(name))
-    
-    while sum(visited) != len(name):
-        
-        if not visited[cursor] and name[cursor] != 'A':
-            c=name[cursor]
-            visited[cursor]=1
+
+    while name.count('A') != len(name):
+        if name[cursor] != 'A':
+            answer+=min(ord(name[cursor])-ord('A'), 26-ord(name[cursor])+ord('A')) 
+            name[cursor] = 'A'
+
+        if name.count('A') == len(name):
+            return answer
+
+        front_move=1
+        end_move=1
+
+        for i in range(1,len(name)):
+            if name[cursor+i] == 'A':
+                front_move+=1
+            else:
+                break
+            if name[cursor-i] == 'A':
+                end_move+=1
+            else:
+                break
+
+        print(cursor, front_move, end_move)
+        if front_move <= end_move:
+            answer+=front_move
+            cursor+=front_move
         else:
-            
-            pass
-        
-        temp=ord(c)-ord('A')
-        if temp > 13:
-            temp= abs(temp-26)
-        answer+=temp    
-        
-        for i in range(1,len(name),1):
-            try:
-                if name[cursor+i] != 'A':
-                    move=i
-                    break
-                if name[cursor-i] != 'A':
-                    move=-i
-                    break
-            except IndexError as identifier:
-                pass
-        print(c, temp, answer, move)
-        answer+=move
-        cursor+=move    
-        # cursor += 1
+            answer+=end_move
+            cursor-=end_move
+
     return answer
 
-# print(solution2("JEROEN")) #56
-print(solution2("JAN")) #23
+# print(solution("JEROEN")) #56
+print(solution("JAN")) #23
 # print(solution("AZA"))
 # print(solution("AZAA"))
 # print(solution("A"))
