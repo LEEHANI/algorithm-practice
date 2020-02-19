@@ -71,8 +71,6 @@ catch(Exception e)
 - ```문자열``` 처리가 어려움   
 - ```입출력``` 때 손이 많이 감 
 
-아직 익숙지 않아서 가독성도 떨어지고 코드 짜는데 오래 걸리지만! 계속 연습중  
-
 
 - 입력 input(), sys.stdin.readline().strip()
 ```
@@ -80,6 +78,12 @@ import sys
 
 cnt = int(input())
 N, M = map(int, sys.stdin.readline().strip().split())
+```
+- input 시간초과 발생시 대처 
+```python
+import sys
+
+input = sys.stdin.readline
 ```
 - 출력
 ```
