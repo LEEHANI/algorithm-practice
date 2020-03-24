@@ -1,15 +1,9 @@
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
 import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
 
-public class Solution {
+public class BubbleSort {
 
     // Complete the countSwaps function below.
-    static void countSwaps(int[] a) {
+    static void countSwaps(final int[] a) {
         int swapCount = 0;
 
         for(int i = 0; i < a.length-1; i ++)
@@ -18,7 +12,7 @@ public class Solution {
             {
                 if(a[j] > a[j+1])
                 {
-                    int temp = a[j];
+                    final int temp = a[j];
                     a[j] = a[j+1];
                     a[j+1] = temp;
                     swapCount++;
@@ -32,17 +26,17 @@ public class Solution {
 
     private static final Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) {
-        int n = scanner.nextInt();
+    public static void main(final String[] args) {
+        final int n = scanner.nextInt();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
-        int[] a = new int[n];
+        final int[] a = new int[n];
 
-        String[] aItems = scanner.nextLine().split(" ");
+        final String[] aItems = scanner.nextLine().split(" ");
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
         for (int i = 0; i < n; i++) {
-            int aItem = Integer.parseInt(aItems[i]);
+            final int aItem = Integer.parseInt(aItems[i]);
             a[i] = aItem;
         }
 

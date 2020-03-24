@@ -1,4 +1,6 @@
-public class Solution {
+import java.util.Arrays;
+
+public class MarkAndToys {
 
     // Complete the maximumToys function below.
     static int maximumToys(int[] prices, int k) {
