@@ -57,9 +57,9 @@ if __name__=="__main__":
     - priorityQueue는 Thread-safe 하기 때문에 속도가 더 느리다. 멀티스레드 환경에서는 필수 
     - heapq는 Thread-non-safe 하기 때문에 속도가 빠르다. 알고리즘 테스트에 필수
   + heapq.heappush(min_heap, 7)
-- `from itertools import permutations`
+- `from itertools import permutations` # 순열 
   + permutations(arr, 3)
-- `from itertools import combinations`
+- `from itertools import combinations` # 조합
   + combinations(numbers, 3)
 - `import re`
   + m=re.match('[^0-9]+', str)  
