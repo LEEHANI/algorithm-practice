@@ -4,16 +4,19 @@ def solution(relation):
     answer = 0
     
     col=[]
+    # convert row to col
     for i in range(len(relation[0])):
         col.append([relation[j][i] for j in range(len(relation))])
     
     size=len(col[i])
     i=0
+    # find single candidate key
     while i<len(col):
         if size == len(list(set(col[i]))):
             col.pop(i)        
             answer += 1
         i+=1
+    
     
     i=2
     for one,two in combinations(col,2):
