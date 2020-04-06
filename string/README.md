@@ -17,7 +17,7 @@
     - `list(map(int, arr))` # int(all items of arr)`
   + 정렬
     + `sorted(arr, reverse=True)` # return arr 
-      * 정렬 조건 `sorted(arr, key=lambda x: (x[1], -x[0]))`
+      * 정렬 조건 `arr=sorted(arr, key=lambda x: (x[1], -x[0]), reverse=True)`
     + `arr.sort()` # return void
 - ascii
   + `ord()` #chr to ascii
