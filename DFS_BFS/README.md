@@ -29,13 +29,23 @@ def BFS(start):
 
 DFS
 - recursive
-```
-def DFS(start):
-    visited[start] = 1
 
+```python
+# 그래프 탐색
+def DFS(start):
     for i in arr[start]:
         if not visited[i]:
+            visited[start] = 1
             DFS(i)
+```
+```python
+# 백트래킹
+def DFS(start):
+    for i in range(n):
+        if not visited[i]:
+            visited[i] = 1
+            DFS(i)
+            visited[i] = 0
 ```
 - iterative
 
