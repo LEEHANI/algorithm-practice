@@ -9,6 +9,7 @@ for i in range(n):
     pins.append(list(map(int,input().split())))
 op=input()
 x,y=0,0
+
 for i in range(m):
     nx,ny=0,0
     if op[i]=='S':
