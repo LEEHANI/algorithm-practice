@@ -1,6 +1,22 @@
 ## 문제풀기
 - 시간 초과가 난다면 stack을 써볼까? 
 
+# Python 자료구조 
+- arr
+  + arr = [0]*10
+  + arr = [[0 for col in range(4)] for row in range(5)]
+- map
+  + m = {}
+  + m['abc'] = 123 (삽입)
+  + b = m['abc'] (추출)
+    - 키값이 없는데 추출하려하면 KeyError 발생한다. in으로 존재 여부 검사해야함 
+      ```
+      if n in m:
+        m[n] += 1
+      else:
+        m[n] = 1
+      ```
+
 # Python 중요 내장 함수 
 - `str(5)` # int to str
 - 문자열 곱셈 `str += '*'*5` # *****
