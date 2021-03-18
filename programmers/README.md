@@ -18,6 +18,8 @@
       ```
 
 # Python 중요 내장 함수 
+- `bin(5)` 2진수로 변환 
+- `11.zfill(5)` 00011, 0으로 채우기  
 - `str(5)` # int to str
 - 문자열 곱셈 `str += '*'*5` # *****
 - `reversed('abcd')` # dcba  
