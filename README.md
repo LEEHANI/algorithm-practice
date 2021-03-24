@@ -24,7 +24,7 @@
 
 - Greedy Algorithm
 - N and M
-- DP(Dynamic Programming)
+- Recursive ~~ DP(Dynamic Programming)
 - DFS, BFS
 - Tree
 - Binary Search
