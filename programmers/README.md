@@ -5,17 +5,18 @@
 - arr
   + arr = [0]*10
   + arr = [[0 for col in range(4)] for row in range(5)]
-- map
+- map(dict)
   + m = {}
   + m['abc'] = 123 (삽입)
   + b = m['abc'] (추출)
-    - 키값이 없는데 추출하려하면 KeyError 발생한다. in으로 존재 여부 검사해야함 
+    - 키값이 없는데 추출하려하면 KeyError 발생한다. in 으로 존재 여부 검사해야함 
       ```
       if n in m:
         m[n] += 1
       else:
         m[n] = 1
       ```
+    - 혹은 `m.setdefault(key, 0)`
 
 # Python 중요 내장 함수 
 - `bin(5)` 2진수로 변환 
