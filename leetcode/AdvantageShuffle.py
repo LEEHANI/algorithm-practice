@@ -1,5 +1,5 @@
 class Solution:
-    def advantageCount(self, A: List[int], B: List[int]) -> List[int]:
+    def advantageCount(self, A, B):
         a = sorted(A)
         b = sorted(B)
         remain = []
@@ -29,4 +29,4 @@ class Solution:
 
 if __name__=="__main__":
     sol1 = Solution()
-    print(sol1.advantageCount(([2,0,4,1,2], [1,3,0,0,2])) 
+    print(sol1.advantageCount([2,0,4,1,2], [1,3,0,0,2])) 
