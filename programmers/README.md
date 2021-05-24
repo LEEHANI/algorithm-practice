@@ -1,5 +1,6 @@
 ## 문제풀기
 - 시간 초과가 난다면 stack을 써볼까? 
+- arr 탐색이 오래걸린다면 binary search를 해볼까?
 - 정렬이 매번 들어가서 순위를 알아야 한다면 => `heap`을 까먹지 말자
 
 # Python 자료구조 
@@ -22,7 +23,9 @@
         m[n] = 1
       ```
     - 혹은 `m[key] = m.setdefault(key, 0) + 1`
-
+    - 복제 
+      - m2 = m1.copy() # 주소는 동일
+      - m2 = copy.deepcopy(m1)   
 # Python 중요 내장 함수 
 - `bin(5)` 2진수로 변환 
 - `11.zfill(5)` 00011, 0으로 채우기  
