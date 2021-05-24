@@ -21,7 +21,7 @@
       else:
         m[n] = 1
       ```
-    - 혹은 `m.setdefault(key, 0)`
+    - 혹은 `m[key] = m.setdefault(key, 0) + 1`
 
 # Python 중요 내장 함수 
 - `bin(5)` 2진수로 변환 
