@@ -72,20 +72,38 @@ else:
 - `enumerate`
 ```python
 if __name__=="__main__":
-    for i,v in enumerate(['a','b','c','d']):
-        print(i,v)
-
-# i : index, v : value
+    for index,value in enumerate(['a','b','c','d']):
+        print(index, value)
 ```
 
-## python 주요 라이브러리
+## heap
+- `import heapq`
+  + 기본 사용법
+    ```
+    heap=[]
+
+    heapq.heappush(heap, 4)
+    heapq.heappush(heap, 1)
+    heapq.heappush(heap, 7)
+
+    tmp=heapq.heappop(heap)
+    ```
+  + 히피파이 
+    ```
+    heap=[1,4,8,3,2]
+    heapq.heapify(heap)
+    ```
 - `import heapq` vs `import priorityQueue from queue`
   + 차이점
     - priorityQueue는 Thread-safe 하기 때문에 속도가 더 느리다. 멀티스레드 환경에서는 필수 
     - heapq는 Thread-non-safe 하기 때문에 속도가 빠르다. 알고리즘 테스트에 필수
-  + heapq.heappush(min_heap, 7)
+  
+
+## permutation
 - `from itertools import permutations` # 순열 
   + permutations(arr, 3)
+
+## combination
 - `from itertools import combinations` # 조합
   + combinations(numbers, 3)
 - `import re`
