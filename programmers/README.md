@@ -5,10 +5,10 @@
 - 어떤걸 먼저 해결해야할지? 어떤걸 먼저 골라야할지?
 
 # Python 자료구조 
-- arr
+## arr
   + arr = [0]*10
   + arr = [[0 for col in range(4)] for row in range(5)]
-- map(dict)
+## map(dict)
   + 사용법 
     ```
     m = {}
@@ -27,6 +27,16 @@
     - 복제 
       - m2 = m1.copy() # 주소는 동일
       - m2 = copy.deepcopy(m1)   
+
+## stack
+- 따로 존재하지 않음.
+- list를 stack 처럼 사용. 
+- ```
+  stack=[]
+  stack.append(123)
+  stack.pop()
+  ```
+
 # Python 중요 내장 함수 
 - `bin(5)` 2진수로 변환 
 - `11.zfill(5)` 00011, 0으로 채우기  
