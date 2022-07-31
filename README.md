@@ -29,7 +29,7 @@
 - Tree
 - Binary Search
 
-## Java  
+## [Java](./dataStructure)
 입출력 시 Scanner, Sysout대신 BufferedReader, BuffredWriter를 쓰자  
 + 입력 Scanner, System.out.println  
 ```  
