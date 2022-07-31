@@ -110,12 +110,12 @@ if __name__=="__main__":
     - heapq는 Thread-non-safe 하기 때문에 속도가 빠르다. 알고리즘 테스트에 필수
   
 
-## permutation
-- `from itertools import permutations` # 순열 
+## permutation. 순열. 순서있게 나열  
+- `from itertools import permutations`
   + permutations(arr, 3)
 
-## combination
-- `from itertools import combinations` # 조합
+## combination. 조합 
+- `from itertools import combinations`
   + combinations(numbers, 3)
 - `import re`
   + m=re.match('[^0-9]+', str)  

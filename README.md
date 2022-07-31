@@ -68,7 +68,7 @@ catch(Exception e)
 ```  
 <hr>
 
-## Python   
+## [Python](./programmers)
 코테를 보다가.. 자바대신 파이썬을 쓰기로 결심함  
 파이썬 선택 이유   
 
