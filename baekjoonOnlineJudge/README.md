@@ -10,9 +10,11 @@
 - `mid = start + end` 시 `int 범위를 초과`할 수 있으므로 조심. `-2147483648 ~ 2147483647`
 
 # Tree
-## 전위순회. preorder 
+### preorder. 전위순회 
 - root -> left -> right
-## 중위순회. inorder 
+### inorder. 중위순회
 - left -> root -> right
-## 후위순회. postorder 
+### postorder. 후위순회
 - left -> right -> root
+
+# Graph, DFS, BFS
