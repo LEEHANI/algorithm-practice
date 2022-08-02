@@ -20,7 +20,7 @@
 - Map
 - Graph, Tree, Heap
 
-## 알고리즘 풀이 
+## [알고리즘 문제 유형](./baekjoonOnlineJudge)
 - Two Pointer
 - Greedy Algorithm
 - N and M
