@@ -16,9 +16,10 @@
 
 
 # 알고리즘에 사용되는 Java 지식 및 함수  
-- java ArrayList의 defulat size `10`. new ArrayList(CAPACITY)로 지정 가능.
+- java ArrayList의 defulat size `10`. new ArrayList(int CAPACITY)로 지정 가능.
 - int result = s.charAt();
-- char[] chars = s.toCharArray();
+- `char[] chars = s.toCharArray();`
+- `String str = String.valueOf(char);`
 ## Java.util.* 함수 
 ### Arrays
 - int[] array 정렬. `Array.sort(array)`. 제자리 정렬 
@@ -35,6 +36,24 @@
   stack.push("abc");
   stack.pop();
   stack.isEmpty();
+  ```
+
+### ArrayList
+- ```
+  List<String> list = new ArrayList<>();
+
+  list.add(index, value); //index 위치에 추가 
+  list.set(index, value); //index 위치에 값 변경
+  ```
+
+
+### Map
+- ```
+  Map<String, String> m = new HashMap<>();
+  
+  for(String key : m.keySet()) {
+    ...
+  }
   ```
 ### Math 
 - `Math.min()`
